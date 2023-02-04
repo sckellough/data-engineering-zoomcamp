@@ -14,10 +14,7 @@ Now run the command to get help on the "docker build" command
 
 Which tag has the following text? - *Write the image ID to the file* 
 
-- `--imageid string`
 - `--iidfile string`
-- `--idimage string`
-- `--idfile string`
 
 
 ## Question 2. Understanding docker first run 
@@ -26,10 +23,7 @@ Run docker with the python:3.9 image in an interactive mode and the entrypoint o
 Now check the python modules that are installed ( use pip list). 
 How many python packages/modules are installed?
 
-- 1
-- 6
 - 3
-- 7
 
 # Prepare Postgres
 

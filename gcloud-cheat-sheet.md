@@ -155,3 +155,9 @@ gcloud projects add-iam-policy-binding $project_id --member="serviceAccount:$ter
 -- set the default region for my project to 
 gcloud config set compute/region "us-central1"
   
+
+-- add ssh keys across the project (seems like gcloud doesn't understand tilde)
+gcloud compute project-info add-metadata --metadata-from-file=ssh-keys=/Users/skellough/.ssh/gcp.pub
+
+-- add ssh keys to a specific instance
+gcloud compute instances add-metadata de-zoomcamp --metadata-from-file ssh-keys=gcp.pub
